@@ -28,7 +28,7 @@ param functionAppScaleLimit int = -1
 param linuxFxVersion string = runtimeNameAndVersion
 param minimumElasticInstanceCount int = -1
 param numberOfWorkers int = -1
-param scmDoBuildDuringDeployment bool = false
+param scmDoBuildDuringDeployment bool = true
 param use32BitWorkerProcess bool = false
 
 resource appService 'Microsoft.Web/sites@2022-03-01' = {
