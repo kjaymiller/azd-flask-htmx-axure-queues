@@ -3,7 +3,7 @@
 name: flask hello world
 services:
   web:
-    project: ./src
+    project: .
     language: py
     host: appservice
 
