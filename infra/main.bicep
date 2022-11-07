@@ -66,7 +66,7 @@ module appService 'appservice.bicep' = {
     runtimeName: 'python'
     runtimeVersion: '3.10'
     appSettings: {
-      AZURE_STORAGE_QUEUE_NAME:'AzStorageQueueMessage' 
+      AZURE_STORAGE_QUEUE_NAME: toLower(uniqueString(name))
       AZURE_STORAGE_CONNECTION_STRING: storage.outputs.AZURE_STORAGE_CONNECTION_STRING
     }
   }
